@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
+
+body {
+  text-align: center;
+  background-color:black;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+h1{
+  text-align: center;
+  border-style: solid;
+  border-color: #fbfbfb;
+  border-width: thin;
+}
+h3 {
+  color: #fbfbfb;
+  font-size:100px;
+}
+h4 {
+
+  font-size:100px;
+  color: #fff;
+}
+input[Type="text"]
+{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+
+}
+
+input[Type="submit"]
+{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+
+  box-sizing: border-box;
+}

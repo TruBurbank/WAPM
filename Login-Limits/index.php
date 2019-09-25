@@ -6,7 +6,7 @@ if(count($_POST)>0 && isset($_POST["captcha_code"]) && $_POST["captcha_code"]!=$
 $captcha = false;
 $message = "Enter Correct Captcha Code";
 }
-$mysqli = new mysqli('localhost','root','','blog_examples');	
+$mysqli = new mysqli('localhost','root','','blog_examples');
 $ip = $_SERVER['REMOTE_ADDR'];
 $result = $mysqli->query("SELECT count(ip_address) AS failed_login_attempt FROM failed_login WHERE ip_address = '$ip'  AND date BETWEEN DATE_SUB( NOW() , INTERVAL 1 DAY ) AND NOW()");
 $row  = $result->fetch_assoc();
